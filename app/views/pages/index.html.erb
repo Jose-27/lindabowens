@@ -1,0 +1,142 @@
+<div class="container lead">
+  <nav>
+  <a href="/">
+	<h1 class="lead">Linda Boonyuen Owens</h1></a>
+	<ul>
+        <li>Stories |</li>  
+		<li data-toggle="modal" data-target="#myModal">Bio |</li>  
+		<li><a href="#openModal3">Resume |</a></li>
+		<li data-toggle="modal" data-target=".bs-example-modal-lg5">Contact</li>
+		 
+	</ul>
+	</nav>
+	<div class="wrap">
+	<div id="left">
+<a  href="#" onclick="prev(); return false;"><span class="glyphicon glyphicon-chevron-left"></span></a></div>
+<div id="right">
+      <a href="#" onclick="next(); return false;"><span class="glyphicon glyphicon-chevron-right"></span></a></div>  </div>
+
+	<div id="slider">
+	<div class="slide1" id="1"></div>
+	<div class="slide2" id="2"></div>
+	<div class="slide3" id="3"></div>
+	<div class="slide4" id="4"></div>
+	<div class="slide5" id="5"></div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      </div>
+      <div class="modal-body">
+        <p class="lead" style="text-align:center;">Biography</p><br />
+		<article>
+			<p>Linda Boonyuen Owens is a three-time Emmy Award winning journalist and multimedia expert with over 15 years of experience in television news, documentaries and communications.</p>   
+  
+<p>As a consultant at United Nations Economic and Social Commission for Asia and the Pacific (UN ESCAP) since 2012, Linda leads communications strategy for Asia-Pacific regional events from video production, event management, websites, to press kits.  Under the guidance of ESCAP and UN agencies, she produces videos on social development challenges including gender equality, disabilities, and global population issues.  Linda has produced United Nations stories in Bangkok, Jakarta, Delhi, Kuala Lumpur, and Beijing.</p>    
+  
+<p>Linda also directs audiovisual elements for the events where her stories are featured such as Ending Violence Against Women’s Day 2012; International Women’s Day 2013; UN ESCAP Goldman Sach’s Women’s Entrepreneurship Consultations 2013; Sixth Asian and Pacific Population Conference 2013; and also the UN ESCAP Sasakawa Disability-inclusive Business Award 2013.</p>    
+  
+<p>In 2005, ABC News Good Morning America hired Linda as a one-woman band to shoot and produce post-Hurricane Katrina stories of recovery along the Mississippi Gulf Coast. Armed with her DV camera, she covered residents relocating to a temporary "tent city" built by the Navy Seabees. After Katrina, she began crashing breaking news for correspondents and GMA anchors Diane Sawyer, Robin Roberts and Chris Cuomo. Among hundreds of stories, she's covered the Virginia Tech shootings, climate change in the Arctic, U.S. troops homecomings from Iraq, male breast cancer, and avalanche survivors. Linda was honored as part of the GMA team that won Emmy Awards for Outstanding Morning Program in 2006, 2007 and 2008.</p>    
+  
+<p>Before network news, Linda freelanced for seven years, producing and shooting for the BBC, TLC, Discovery and PBS. She worked on TLC's "Maternity Ward," a series about the inner workings of a hospital's labor and delivery department. Staying on the medical beat, Linda followed and filmed patients who go under the knife for beauty in Discovery Health's "Plastic Surgery: New York Style." For "TV 411" on PBS, she produced a story on slam poets in the Broadway show, "Russell Simmons' Def Poetry Jam," and another about a New York state inmate who entered prison as a high school drop-out and came out 13 years later with a master's degree.</p>    
+  
+<p>An Air Force brat who grew up as the eldest and only sister of four younger brothers, she was raised on remote military bases in Okinawa, Japan; Anchorage, Alaska, and the Florida Panhandle.</p>    
+  
+<p>Linda waited tables to pay her way through Okaloosa-Walton Community College in Niceville, FL before transferring to the University of Florida, earning two scholarships to double major in Political Science and Japanese. In 1994 she took her first job in Nagasaki, teaching for the Japanese Ministry of Education.</p>    
+  
+<p>Using her job in Nagasaki to explore the Asia-Pacific region, she discovered the vibrancy of other countries, including India, Cambodia and Indonesia. She also spent two summers traveling by train through Eastern Europe, from the Czech Republic through Bulgaria.</p>    
+  
+<p>In 1998, Linda moved to New York City to attend the Columbia University Graduate School of Journalism. She wrote her masters thesis on the passing of a hate crimes law in New York State.<p>    
+  
+<p>To satisfy her need for adventure, Linda continues to travel the world. She is now on a southward journey toward Patagonia. So far she has danced her way through workshops at the International Salsa Convention in Puerto Rico, climbed the Mayan ruins in the Yucatan, and survived toxic fish poisoning in the Dominican Republic. In December 2008 Linda traveled to the Thai-Cambodian border, filming her mother's return to her homeland after an absence of nearly 40 years.</p>
+		</article>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade bs-example-modal-lg5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" style="text-align:center;">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      </div>
+      <p class="lead">Contact</p>
+		<p>Phone:&nbsp;<span class="glyphicon glyphicon-earphone"></span><a href="tel:+66 (84) 658 7541 ">+66 (84) 658 7541&nbsp;</a></p>
+		<p> Email:&nbsp;<span class="glyphicon glyphicon-envelope"></span> <a href="mailto:Lbo8@hotmail.com">Lbo8@hotmail.com</a></p>
+		<p> Skype:&nbsp;<span class="glyphicon glyphicon-user"></span>lindabowens</p>
+    </div>
+  </div>
+</div>
+
+
+</div>
+<script>
+	
+sliderInt = 1;
+sliderNext = 2;
+
+$(document).ready(function(){
+$("#slider > div#1").fadeIn(1000);
+startSlider();
+
+});
+function startSlider(){
+	count = $("#slider > div").size();
+
+    loop = setInterval(function(){
+
+if(sliderNext >count){
+	sliderNext =1;
+	sliderInt =1;
+}
+
+
+ $("#slider > div").fadeOut(700);
+ $("#slider > div#"+ sliderNext).fadeIn(700);
+
+ sliderInt = sliderNext;
+ sliderNext = sliderNext + 1;
+
+	},9000)
+}
+
+function prev(){
+ newSlide = sliderInt - 1;
+ showSlide(newSlide);
+}
+
+
+function next(){
+newSlide = sliderInt + 1;
+ showSlide(newSlide);
+}
+
+function stopLoop(){
+
+ window.clearInterval(loop);
+
+}
+
+function showSlide(id){
+	stopLoop();
+if(id > count){
+	id = 1 ;
+}else if(id < 1){
+	id = count;
+}
+
+
+ $("#slider > div").fadeOut(700);
+ $("#slider > div#"+ id).fadeIn(700);
+
+ sliderInt = id;
+ sliderNext = id + 1;
+ startSlider();
+}
+</script>
