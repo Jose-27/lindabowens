@@ -139,7 +139,17 @@ nav{
    }
   }
 }
-
+.story_body {
+  padding:10px;
+    li{
+ list-style-type:none;
+ display:inline-block;
+ text-align: center;
+ a{
+  padding:20px;
+ }
+}
+}
 @media (max-width: 500px){
   nav .lead{
     font-size: 30px;
