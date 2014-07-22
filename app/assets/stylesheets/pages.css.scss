@@ -28,7 +28,7 @@ nav{
       color: #fff;
       display: inline-block;
      text-shadow: 1px 1px 0px rgba(150, 150, 150, 1);
-     padding-left:10px;
+     margin-right:5px; 
      font-size: 0.7em;
      &:hover{
       cursor: pointer;
@@ -145,11 +145,11 @@ nav{
  list-style-type:none;
  display:inline-block;
  text-align: center;
- a{
-  padding:20px;
- }
+ cursor:pointer;
+  color:#15c;
+  }
 }
-}
+
 @media (max-width: 500px){
   nav .lead{
     font-size: 30px;
@@ -178,6 +178,28 @@ nav{
   left: 2%;
  }
 }
+
+.bs-example-modal-lg-video0,
+.bs-example-modal-lg-video1,
+.bs-example-modal-lg-video2,
+.bs-example-modal-lg-video3,
+.bs-example-modal-lg-video4,
+.bs-example-modal-lg-video5,
+.bs-example-modal-lg-video6,
+.bs-example-modal-lg-video7{
+  .modal-content{
+  background-color:#000;
+  color:#15c;
+  iframe{
+    max-width:900px;
+    width:100%;
+    height:500px;
+
+   }
+  }
+}
+
+
 @media (max-width: 750px){
   nav ul{
   width: 90%;
@@ -185,5 +207,10 @@ nav{
  }
  .wrap{
    margin-top:140px;
-}
+  }
+  .story_body li{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

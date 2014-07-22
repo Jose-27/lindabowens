@@ -1,4 +1,4 @@
-<div class="container lead">
+<div class="container lead"><!-- start container lead -->
   <nav>
   <a href="/">
 	<h1 class="lead">Linda Boonyuen Owens</h1></a>
@@ -32,13 +32,14 @@
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
       </div>
     <div class="story_body" >
-     <li><a href="http://youtu.be/xQM8RxqBPS4"><%= image_tag('pic_box4.jpg') %>News</a></li>
-     <li><a href="http://youtu.be/iBcz0kNUtTM"><%= image_tag('pic_box7.jpg') %>Health</a></li>
-      <li><a href="http://youtu.be/PjUGFSuuVv8"><%= image_tag('pic_box2.jpg') %>Human Interest </a></li>
-       <li><a href="http://youtu.be/rB9mXIG8XYo"><%= image_tag('pic_box8.jpg') %>Nature</a></li>
-      <li><a href="http://youtu.be/RK69FGkcZTc"><%= image_tag('pic_box3.jpg') %>Economy</a></li>
-      <li><a href="http://youtu.be/se_LY96NN5c"><%= image_tag('pic_box6.jpg') %>Law &amp; Justice</a></li>
-      <li><a href="http://youtu.be/xEmfUirYZnc"><%= image_tag('pic_box9.jpg') %>Documentaries</a></li>
+      <li data-toggle="modal" data-target=".bs-example-modal-lg-video0"><%= image_tag('pic_box1.png') %>Unite Nations</li>
+      <li data-toggle="modal" data-target=".bs-example-modal-lg-video1"><%= image_tag('pic_box4.jpg') %>News</li>
+      <li data-toggle="modal" data-target=".bs-example-modal-lg-video2"><%= image_tag('pic_box7.jpg') %>Health</a></li>
+      <li data-toggle="modal" data-target=".bs-example-modal-lg-video3"><%= image_tag('pic_box2.jpg') %>Human Interest </a></li>
+      <li data-toggle="modal" data-target=".bs-example-modal-lg-video4"><%= image_tag('pic_box8.jpg') %>Nature</a></li>
+      <li data-toggle="modal" data-target=".bs-example-modal-lg-video5"><%= image_tag('pic_box3.jpg') %>Economy</a></li>
+      <li data-toggle="modal" data-target=".bs-example-modal-lg-video6"><%= image_tag('pic_box6.jpg') %>Law &amp; Justice</a></li>
+      <li data-toggle="modal" data-target=".bs-example-modal-lg-video7"><%= image_tag('pic_box9.jpg') %>Documentaries</a></li>
   </div>
     </div>
   </div>
@@ -46,6 +47,7 @@
 
 
 <!-- Modal -->
+<div class="first-modals"><!-- start -->
 <div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -54,7 +56,10 @@
       </div>
       <div class="modal-body">
         <p class="lead" style="text-align:center;">Biography</p><br />
-		<article>
+		<article style="font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+color: #333;
+font-size: 12px;
+line-height: 20px;">
 			<p>Linda Boonyuen Owens is a three-time Emmy Award winning journalist and multimedia expert with over 15 years of experience in television news, documentaries and communications.</p>   
   
 <p>As a consultant at United Nations Economic and Social Commission for Asia and the Pacific (UN ESCAP) since 2012, Linda leads communications strategy for Asia-Pacific regional events from video production, event management, websites, to press kits.  Under the guidance of ESCAP and UN agencies, she produces videos on social development challenges including gender equality, disabilities, and global population issues.  Linda has produced United Nations stories in Bangkok, Jakarta, Delhi, Kuala Lumpur, and Beijing.</p>    
@@ -82,20 +87,122 @@
 
 <div class="modal fade bs-example-modal-lg5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
-    <div class="modal-content" style="text-align:center;">
+    <div class="modal-content">
         <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
       </div>
-      <p class="lead">Contact</p>
+    <p class="lead" style="text-align:center;">Contact</p>
+    <div class="row">
+    <div class="col-md-6 col-md-offset-4" >
 		<p>Phone:&nbsp;<span class="glyphicon glyphicon-earphone"></span><a href="tel:+66 (84) 658 7541 ">+66 (84) 658 7541&nbsp;</a></p>
 		<p> Email:&nbsp;<span class="glyphicon glyphicon-envelope"></span> <a href="mailto:Lbo8@hotmail.com">Lbo8@hotmail.com</a></p>
 		<p> Skype:&nbsp;<span class="glyphicon glyphicon-user"></span>lindabowens</p>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+</div><!-- finish first modal -->
+
+
+
+<!-- ============================================
+Modal Videos
+============================================ -->
+
+
+<div class="modal fade bs-example-modal-lg-video0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" style="text-align:center;">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" style="color:#fff;">&times;</span><span class="sr-only">Close</span></button>
+      </div>
+    <iframe src="//www.youtube.com/embed/TS8G76r3FdE" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
 </div>
 
 
+<div class="modal fade bs-example-modal-lg-video1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" style="text-align:center;">
+        <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" style="color:#fff;">&times;</span><span class="sr-only">Close</span></button>
+      </div>
+     <iframe src="//www.youtube.com/embed/PjUGFSuuVv8" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
 </div>
+
+
+<div class="modal fade bs-example-modal-lg-video2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" style="text-align:center;">
+        <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" style="color:#fff;">&times;</span><span class="sr-only">Close</span></button>
+      </div>
+     <iframe src="//www.youtube.com/embed/RK69FGkcZTc" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade bs-example-modal-lg-video3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" style="text-align:center;">
+        <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" style="color:#fff;">&times;</span><span class="sr-only">Close</span></button>
+      </div>
+     <iframe src="//www.youtube.com/embed/xQM8RxqBPS4" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+</div>
+
+<div class="modal fade bs-example-modal-lg-video4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" style="text-align:center;">
+        <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" style="color:#fff;">&times;</span><span class="sr-only">Close</span></button>
+      </div>
+     <iframe src="//www.youtube.com/embed/se_LY96NN5c" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade bs-example-modal-lg-video5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" style="text-align:center;">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" style="color:#fff;">&times;</span><span class="sr-only">Close</span></button>
+      </div>
+     <iframe src="//www.youtube.com/embed/iBcz0kNUtTM" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade bs-example-modal-lg-video6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" style="text-align:center;">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" style="color:#fff;">&times;</span><span class="sr-only">Close</span></button>
+      </div>
+    <iframe src="//www.youtube.com/embed/rB9mXIG8XYo" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade bs-example-modal-lg-video7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" style="text-align:center;">
+        <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" style="color:#fff;">&times;</span><span class="sr-only">Close</span></button>
+      </div>
+    <iframe src="//www.youtube.com/embed/xEmfUirYZnc" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+</div><!-- finish container lead -->
 <script>
 	
 sliderInt = 1;
@@ -159,4 +266,5 @@ if(id > count){
  sliderNext = id + 1;
  startSlider();
 }
+
 </script>
