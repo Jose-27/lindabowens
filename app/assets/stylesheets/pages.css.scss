@@ -1,6 +1,7 @@
 html,body{
 	width:100%;
   height: auto;
+   font-family: 'Raleway', sans-serif!important;
 }
 
 .container{
@@ -15,9 +16,11 @@ nav{
   z-index: 2;
   text-align: center;
   a{color:#fff!important; text-decoration:none!important;}
-  h1{
+  p {
     color:#fff;
-    text-shadow: 2px 2px 0px rgba(150, 150, 150, 1);
+    font-size: 40px;
+    font-weight: 100!important;
+    font-family: 'Raleway', sans-serif!important;
   }
   ul{
     border-top:1px solid #fff;
@@ -143,10 +146,18 @@ nav{
   padding:10px;
     li{
  list-style-type:none;
- display:inline-block;
- text-align: center;
  cursor:pointer;
   color:#15c;
+  
+  position:relative;
+   p{
+   float: left;
+   margin-top: 40px;
+  }
+  img{
+    float: left;
+    margin-top: 10px;
+  }
   }
 }
 
@@ -177,6 +188,13 @@ nav{
   width: 95%;
   left: 2%;
  }
+ .story_body {
+   p{
+   float: left;
+   margin-top: 0px!important;
+   font-size:15px!important;
+    }
+  }
 }
 
 .bs-example-modal-lg-video0,
@@ -199,6 +217,12 @@ nav{
   }
 }
 
+
+.modal-dialog.stories>.modal-content{
+  max-width: 45%;
+  left:25%;
+  position:absolute;
+}
 
 @media (max-width: 750px){
   nav ul{
