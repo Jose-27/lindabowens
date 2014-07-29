@@ -1,8 +1,13 @@
 html,body{
 	width:100%;
   height: auto;
-   font-family: 'Raleway', sans-serif!important;
+  font-family:"Times New Roman",Georgia,Serif;
 }
+
+ p{
+   margin: 0 0 20px!important;
+ }
+h1 { font-family: 'Poiret One', cursive; font-size:40px; font-weight: 900; text-shadow: 3px 3px 3px rgba(150, 150, 150, 1); }
 
 .container{
     width: 100%;
@@ -20,7 +25,6 @@ nav{
     color:#fff;
     font-size: 40px;
     font-weight: 100!important;
-    font-family: 'Raleway', sans-serif!important;
   }
   ul{
     border-top:1px solid #fff;
@@ -30,9 +34,11 @@ nav{
     li{
       color: #fff;
       display: inline-block;
-     text-shadow: 1px 1px 0px rgba(150, 150, 150, 1);
+     text-shadow: 3px 3px 3px rgba(150, 150, 150, 1);
      margin-right:5px; 
-     font-size: 0.7em;
+     font-size: 0.9em;
+     font-family: 'Poiret One', cursive; 
+     font-weight: 900!important;
      &:hover{
       cursor: pointer;
      }
@@ -152,12 +158,29 @@ nav{
   position:relative;
    p{
    float: left;
-   margin-top: 40px;
+   padding-left:40px;
+   margin-top: 80px!important;
   }
   img{
     float: left;
-    margin-top: 10px;
+    margin-top: 30px;
   }
+  }
+}
+
+.modal-dialog.stories>.modal-content{
+  max-width: 55%;
+  left:25%;
+  position:absolute;
+}
+
+.modal-body{
+    h1{
+  text-align:center;
+  font-style:italic;
+  font-size: 20px; 
+  font-weight:bolder!important;
+ 
   }
 }
 
@@ -177,9 +200,7 @@ nav{
   width: 90%!important;
   margin: 0 auto;
  }
- article p{
-  font-size: 0.9em;
- }
+ 
  h3{
   font-size: 1.2em!important;
  }
@@ -215,13 +236,6 @@ nav{
 
    }
   }
-}
-
-
-.modal-dialog.stories>.modal-content{
-  max-width: 45%;
-  left:25%;
-  position:absolute;
 }
 
 @media (max-width: 750px){
