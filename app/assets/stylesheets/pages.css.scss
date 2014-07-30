@@ -196,12 +196,15 @@ nav{
   }
   .links{
     width: 90%!important;
+    button{
+      font-size: 14px!important;
+    }
   }
  .modalDialog > div{
   width: 90%!important;
   margin: 0 auto;
  }
- h1{font-size:30px!important;}
+ h1{font-size:25px!important;}
  
  h3{
   font-size: 1.2em!important;
@@ -235,6 +238,9 @@ nav{
 
 
 @media (max-width: 935px){
+   .contact p{
+    padding-left:35px!important;
+  }
   nav ul{
   width: 90%;
   text-align: center;
@@ -249,14 +255,11 @@ nav{
    font-size:15px!important;
    width: 100%;
    padding-left:0!important;
-
-
-
     }
   }
   .modal-dialog.stories > .modal-content {
 max-width: 42%!important;
-}
+ }
 }
 
 .links{
