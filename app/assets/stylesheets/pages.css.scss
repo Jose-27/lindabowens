@@ -7,7 +7,7 @@ html,body{
  p{
    margin: 0 0 20px!important;
  }
-h1 { font-family: 'Poiret One', cursive!important; font-size:40px; font-weight: 100; text-shadow: 3px 3px 3px rgba(150, 150, 150, 1); }
+h1 { font-family: 'Poiret One', cursive!important; font-size:40px; font-weight: 400; text-shadow: 3px 3px 3px rgba(150, 150, 150, 1); }
 
 .container{
     width: 100%;
@@ -230,7 +230,7 @@ nav{
   }
 }
 
-@media (max-width: 850px){
+@media (max-width: 935px){
   nav ul{
   width: 90%;
   text-align: center;
@@ -260,7 +260,8 @@ nav{
     font-size: 20px;
     text-shadow: 3px 3px 3px rgba(150, 150, 150, 1);
     font-family: 'Poiret One', cursive!important; 
-     font-weight: 100;
+     font-weight: 900;
+     text-align: center;
 
   }
 }
