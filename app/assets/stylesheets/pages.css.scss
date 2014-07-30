@@ -230,6 +230,8 @@ nav{
   }
 }
 
+
+
 @media (max-width: 935px){
   nav ul{
   width: 90%;
@@ -250,11 +252,14 @@ nav{
 
     }
   }
+  .modal-dialog.stories > .modal-content {
+max-width: 42%!important;
+}
 }
 
 .links{
   button{
-    border:none!important;
+   
     background:none!important;
     color:#fff!important;
     font-size: 20px;
@@ -262,6 +267,8 @@ nav{
     font-family: 'Poiret One', cursive!important; 
      font-weight: 900;
      text-align: center;
+     border:none!important;
+     padding:0!important;
 
   }
 }
