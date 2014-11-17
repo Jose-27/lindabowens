@@ -1,6 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-  RAILS_ENV=production bundle exec rake assets:precompile
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
@@ -21,7 +21,7 @@ Rails.application.configure do
 
   # Disable Rails's static asset server (Apache or nginx will already do this).
   config.serve_static_assets = true
-config.assets.initialize_on_precompile = false
+
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
