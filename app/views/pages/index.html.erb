@@ -1,290 +1,231 @@
-<div class="container lead"><!-- start container lead -->
-  <nav>
-  <a href="/">
-	<h1>Linda Boonyuen Owens</h1></a>
-	<div class="links">
-   <button data-toggle="modal" data-target=".bs-example-modal-lg1">Stories |</button>
-		<button data-toggle="modal" data-target="#myModal">Bio |</button>  
-		<button> <a href="LBO_resume.pdf">Resume |</a></button>
-		<button data-toggle="modal" data-target=".bs-example-modal-lg5">Contact</button>
-
-		 
-	</div>
-	</nav>
-	<div class="wrap">
-	<div id="left">
-<a  href="#" onclick="prev(); return false;"><span class="glyphicon glyphicon-chevron-left"></span></a></div>
-<div id="right">
-      <a href="#" onclick="next(); return false;"><span class="glyphicon glyphicon-chevron-right"></span></a></div>  </div>
-
-	<div id="slider">
-	<div class="slide1" id="1"></div>
-	<div class="slide2" id="2"></div>
-	<div class="slide3" id="3"></div>
-	<div class="slide4" id="4"></div>
-	<div class="slide5" id="5"></div>
-</div>
-
-
-<div class="modal fade bs-example-modal-lg1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg stories">
-    <div class="modal-content" >
-        <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <!--  ====================
+       debug check box
+       ==================== -->
+      <div class="debug">
+        <label><input type="checkbox"><h1>See behind the Parallax</h1></label>
       </div>
-    <div class="story_body" >
-      <li data-toggle="modal"  data-target=".bs-example-modal-lg-video0"><%= image_tag('pic_box1.png') %><p >United Nations</p></li>
-      <li data-toggle="modal" data-target=".bs-example-modal-lg-video1"><%= image_tag('pic_box4.jpg') %><p>News</p></li>
-      <li data-toggle="modal" data-target=".bs-example-modal-lg-video2"><%= image_tag('pic_box7.jpg') %></a><p>Health</p></li>
-      <li data-toggle="modal" data-target=".bs-example-modal-lg-video3"><%= image_tag('pic_box2.jpg') %></a><p>Human Interest </p></li>
-      <li data-toggle="modal" data-target=".bs-example-modal-lg-video4"><%= image_tag('pic_box8.jpg') %></a><p>Nature</p></li>
-      <li data-toggle="modal" data-target=".bs-example-modal-lg-video5"><%= image_tag('pic_box3.jpg') %></a><p>Economy</p></li>
-      <li data-toggle="modal" data-target=".bs-example-modal-lg-video6"><%= image_tag('pic_box6.jpg') %></a><p>Law &amp; Justice</p></li>
-      <li data-toggle="modal" data-target=".bs-example-modal-lg-video7"><%= image_tag('pic_box9.jpg') %></a><p>Documentaries</p></li>
-  </div>
-    </div>
-  </div>
-</div>
+      <!--  =================================================
+                      Search input 
+       =====================================================-->
+          <div id="morphsearch" class="morphsearch">
+        <form class="morphsearch-form">
+          <input class="morphsearch-input" type="search" placeholder="Search........"/>
+        </form>
+        <div class="morphsearch-content">
+          <div class="dummy-column">
+            <h2>Men's Shoes</h2>
+            <a class="dummy-media-object">
+              <img class="round" src="http://sakspov.saksfifthavenue.com/wp-content/media/2012/06/RagBone_Inline4.gif"/>
+              <h3>GUCCI</h3>
+            </a>
+            <a class="dummy-media-object">
+              <img class="round" src="http://sakspov.saksfifthavenue.com/wp-content/media/2012/06/RagBone_Inline4.gif"/>
+               <h3>GUCCI</h3>
+            </a>
+            <a class="dummy-media-object">
+              <img class="round" src="http://sakspov.saksfifthavenue.com/wp-content/media/2012/06/RagBone_Inline4.gif"/>
+               <h3>GUCCI</h3>
+            </a>
+            <a class="dummy-media-object">
+              <img class="round" src="http://sakspov.saksfifthavenue.com/wp-content/media/2012/06/RagBone_Inline4.gif"/>
+              <h3>GUCCI</h3>
+            </a>
+            <a class="dummy-media-object">
+              <img class="round" src="http://sakspov.saksfifthavenue.com/wp-content/media/2012/06/RagBone_Inline4.gif"/>
+               <h3>GUCCI</h3>
+            </a>
+           <a class="dummy-media-object">
+              <img class="round" src="http://sakspov.saksfifthavenue.com/wp-content/media/2012/06/RagBone_Inline4.gif"/>
+               <h3>GUCCI</h3>
+            </a>
+          </div>
+          <div class="dummy-column">
+            <h2>WOMEN'S SHOES</h2>
+            <a class="dummy-media-object">
+              <img class="round" src="http://image.s5a.com/is/image/saks/0440929071062_247x329.jpg"/>
+              <h3>GUCCI</h3>
+            </a>
+             <a class="dummy-media-object">
+              <img class="round" src="http://image.s5a.com/is/image/saks/0440929071062_247x329.jpg"/>
+              <h3>GUCCI</h3>
+            </a>
+           <a class="dummy-media-object">
+              <img class="round" src="http://image.s5a.com/is/image/saks/0440929071062_247x329.jpg"/>
+              <h3>GUCCI</h3>
+            </a>
+           <a class="dummy-media-object">
+              <img class="round" src="http://image.s5a.com/is/image/saks/0440929071062_247x329.jpg"/>
+              <h3>GUCCI</h3>
+            </a>
+          </div>
+          <div class="dummy-column">
+            <h2>NEW & POPULAR</h2>
+            <a class="dummy-media-object">
+              <img src="http://image.s5a.com/is/image/saks/0476500313009_247x329.jpg"/>
+              <h3>GUCCI</h3>
+            </a>
+            <a class="dummy-media-object">
+              <img src="http://image.s5a.com/is/image/saks/0476500313009_247x329.jpg"/>
+              <h3>GUCCI</h3>
+            </a>
+             <a class="dummy-media-object">
+              <img src="http://image.s5a.com/is/image/saks/0476500313009_247x329.jpg"/>
+              <h3>GUCCI</h3>
+            </a>
+           <a class="dummy-media-object">
+              <img src="http://image.s5a.com/is/image/saks/0476500313009_247x329.jpg"/>
+              <h3>GUCCI</h3></a>
+          </div>
+        </div><!-- morphsearch-content -->
+        <span class="morphsearch-close"></span>
+      </div><!-- morphsearch -->
 
-<!-- Modal -->
-<div class="first-modals"><!-- start -->
-<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-      </div>
-      <div class="modal-body">
-        <h2 style="text-align:center; font-style:italic; font-size:20px; font-weight:900;">Linda Boonyuen Owens</h2>
-         <h2 style="text-align:center; font-style:italic; font-size:20px; font-weight:500;">Biography </h2>
-		<article style=" color: #333;
-font-size: 15px!important;
- line-height: 16px;
- padding-top:15px;">
-			<p>Linda Boonyuen Owens is a three-time Emmy Award winning journalist and multimedia expert with over 15 years of experience in television news, documentaries and communications.</p>   
+      <!--  =================================================
+                       Parallax Containers
+       =====================================================-->
+      <div class="parallax">
+        <div id="group1" class="parallax__group">
+          <div class="parallax__layer parallax__layer--base">
+            <div class="animated fadeInDown ">
+             <%= image_tag "blackSaksLogo.gif", width: '600' %>
+             </div>
+          </div>
+        </div>
+
+        <div id="group2" class="parallax__group">
+          <div class="parallax__layer parallax__layer--base">
+          </div>
+          <div class="parallax__layer parallax__layer--back">
+           <%= image_tag "saksLogo.svg.gif" %>
+          </div>
+        </div>
+
+        <div id="group3" class="parallax__group">
+          <div class="parallax__layer parallax__layer--fore">
+          </div>
+          <div class="parallax__layer parallax__layer--base">
+          </div>
+        </div>
+
+        <div id="group4" class="parallax__group">
+          <div class="parallax__layer parallax__layer--base">
+          </div>
+          <div class="parallax__layer parallax__layer--back">
+               <!-- Crazy circle -->
+            <div class="circle" id="circle"><%= image_tag "saksLogo.svg.gif", width: '200' %></div>
+
+            <!--  3D images -->
+           <div class="image-container">
+           <div class="first-left">
+           <img src="http://wpc.7ce6.edgecastcdn.net/807CE6/hellomonday_com/assets/images/case-studies/reebok-one/header/left-3.png?06202014">
+           </div>
+           <div class="second-left">
+           <img src="http://wpc.7ce6.edgecastcdn.net/807CE6/hellomonday_com/assets/images/case-studies/reebok-one/header/left-2.png?06202014">
+           </div>
+           <div class="third-left">
+           <img src="http://wpc.7ce6.edgecastcdn.net/807CE6/hellomonday_com/assets/images/case-studies/reebok-one/header/left-1.png?06202014">
+           </div>
+
+            <div class="first-right">
+           <img src="http://wpc.7ce6.edgecastcdn.net/807CE6/hellomonday_com/assets/images/case-studies/reebok-one/header/right-3.png?06202014">
+           </div>
+            <div class="second-right">
+           <img src="http://wpc.7ce6.edgecastcdn.net/807CE6/hellomonday_com/assets/images/case-studies/reebok-one/header/right-2.png?06202014">
+           </div>
+            <div class="third-right">
+           <img src="http://wpc.7ce6.edgecastcdn.net/807CE6/hellomonday_com/assets/images/case-studies/reebok-one/header/right-1.png?06202014">
+           </div>
+           </div>
+           <!-- End 3d -->
+          </div>
+          <div class="parallax__layer parallax__layer--deep">
+          </div>
+        </div>
+
+        <div id="group5" class="parallax__group">
+          <div class="parallax__layer parallax__layer--fore">
+          </div>
+          <div class="parallax__layer parallax__layer--base">       
+          </div>
+        </div>
+
+        <div id="group6" class="parallax__group">
+          <div class="parallax__layer parallax__layer--back">
+           <%= image_tag "fashionWeek.gif" %>
+          </div>
+          <div class="parallax__layer parallax__layer--base">
+          </div>
+        </div>
+        <div id="group7" class="parallax__group">
+          <div class="parallax__layer parallax__layer--base">
+          </div>
+        </div>
+      </div><!--End parallax Containers -->
   
-<p>As a consultant at United Nations Economic and Social Commission for Asia and the Pacific (UN ESCAP) since 2012, Linda leads communications strategy for Asia-Pacific regional events from video production, event management, websites, to press kits.  Under the guidance of ESCAP and UN agencies, she produces videos on social development challenges including gender equality, disabilities, and global population issues.  Linda has produced United Nations stories in Bangkok, Jakarta, Delhi, Kuala Lumpur, and Beijing.</p>    
-  
-<p>Linda also directs audiovisual elements for the events where her stories are featured such as Ending Violence Against Women’s Day 2012; International Women’s Day 2013; UN ESCAP Goldman Sach’s Women’s Entrepreneurship Consultations 2013; Sixth Asian and Pacific Population Conference 2013; and also the UN ESCAP Sasakawa Disability-inclusive Business Award 2013.</p>    
-  
-<p>In 2005, ABC News Good Morning America hired Linda as a one-woman band to shoot and produce post-Hurricane Katrina stories of recovery along the Mississippi Gulf Coast. Armed with her DV camera, she covered residents relocating to a temporary "tent city" built by the Navy Seabees. After Katrina, she began crashing breaking news for correspondents and GMA anchors Diane Sawyer, Robin Roberts and Chris Cuomo. Among hundreds of stories, she's covered the Virginia Tech shootings, climate change in the Arctic, U.S. troops homecomings from Iraq, male breast cancer, and avalanche survivors. Linda was honored as part of the GMA team that won Emmy Awards for Outstanding Morning Program in 2006, 2007 and 2008.</p>    
-  
-<p>Before network news, Linda freelanced for seven years, producing and shooting for the BBC, TLC, Discovery and PBS. She worked on TLC's "Maternity Ward," a series about the inner workings of a hospital's labor and delivery department. Staying on the medical beat, Linda followed and filmed patients who go under the knife for beauty in Discovery Health's "Plastic Surgery: New York Style." For "TV 411" on PBS, she produced a story on slam poets in the Broadway show, "Russell Simmons' Def Poetry Jam," and another about a New York state inmate who entered prison as a high school drop-out and came out 13 years later with a master's degree.</p>    
-  
-<p>An Air Force brat who grew up as the eldest and only sister of four younger brothers, she was raised on remote military bases in Okinawa, Japan; Anchorage, Alaska, and the Florida Panhandle.</p>    
-  
-<p>Linda waited tables to pay her way through Okaloosa-Walton Community College in Niceville, FL before transferring to the University of Florida, earning two scholarships to double major in Political Science and Japanese. In 1994 she took her first job in Nagasaki, teaching for the Japanese Ministry of Education.</p>    
-  
-<p>Using her job in Nagasaki to explore the Asia-Pacific region, she discovered the vibrancy of other countries, including India, Cambodia and Indonesia. She also spent two summers traveling by train through Eastern Europe, from the Czech Republic through Bulgaria.</p>    
-  
-<p>In 1998, Linda moved to New York City to attend the Columbia University Graduate School of Journalism. She wrote her masters thesis on the passing of a hate crimes law in New York State.<p>    
-  
-<p>To satisfy her need for adventure, Linda continues to travel the world. She is now on a southward journey toward Patagonia. So far she has danced her way through workshops at the International Salsa Convention in Puerto Rico, climbed the Mayan ruins in the Yucatan, and survived toxic fish poisoning in the Dominican Republic. In December 2008 Linda traveled to the Thai-Cambodian border, filming her mother's return to her homeland after an absence of nearly 40 years.</p>
-		</article>
-      </div>
-    </div>
-  </div>
-</div>
+  <script>
+// ==================================
+//  Joseph Chavez   WORK
+// =================================
+// The job of this function is to listen if the input is checked,
+// and if is replaced with with the debug-on class
+var debugInput = document.querySelector("input");
 
-<div class="modal fade bs-example-modal-lg5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-        <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-      </div>
-    <p style="text-align:center; font-size:30px;">Contact</p>
-    <div class="row">
-    <div class="col-md-6 col-md-offset-4 " >
-    <div class="contact">
-		<p>Phone:&nbsp;<span class="glyphicon glyphicon-earphone"></span><a href="tel:+66 (84) 658 7541 ">+66 (84) 658 7541&nbsp;</a></p>
-		<p> Email:&nbsp;<span class="glyphicon glyphicon-envelope"></span> <a href="mailto:Lbo8@hotmail.com">Lbo8@hotmail.com</a></p>
-		<p> Skype:&nbsp;<span class="glyphicon glyphicon-user"></span>lindabowens</p>
-    </div>
-    </div>
-    </div>
-    </div>
-  </div>
-</div>
-</div><!-- finish first modal -->
-
-
-
-<!-- ============================================
-Modal Videos
-============================================ -->
-
-
-<div class="modal fade bs-example-modal-lg-video0" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content" style="text-align:center;">
-        <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" style="color:#fff;">&times;</span><span class="sr-only">Close</span></button>
-      </div>
-       <div class="embed-responsive embed-responsive-16by9">
-    <iframe src="//www.youtube.com/embed/TS8G76r3FdE" frameborder="0" allowfullscreen></iframe>
-    </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="modal fade bs-example-modal-lg-video1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content" style="text-align:center;">
-        <div class="modal-header">
-         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" style="color:#fff;">&times;</span><span class="sr-only">Close</span></button>
-      </div>
-       <div class="embed-responsive embed-responsive-16by9">
-     <iframe src="//www.youtube.com/embed/PjUGFSuuVv8" frameborder="0" allowfullscreen></iframe>
-     </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="modal fade bs-example-modal-lg-video2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content" style="text-align:center;">
-        <div class="modal-header">
-         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" style="color:#fff;">&times;</span><span class="sr-only">Close</span></button>
-      </div>
-       <div class="embed-responsive embed-responsive-16by9">
-     <iframe src="//www.youtube.com/embed/RK69FGkcZTc" frameborder="0" allowfullscreen></iframe>
-     </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="modal fade bs-example-modal-lg-video3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content" style="text-align:center;">
-        <div class="modal-header">
-         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" style="color:#fff;">&times;</span><span class="sr-only">Close</span></button>
-      </div>
-       <div class="embed-responsive embed-responsive-16by9">
-     <iframe src="//www.youtube.com/embed/xQM8RxqBPS4" frameborder="0" allowfullscreen></iframe>
-     </div>
-  </div>
-</div>
-</div>
-
-<div class="modal fade bs-example-modal-lg-video4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content" style="text-align:center;">
-        <div class="modal-header">
-         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" style="color:#fff;">&times;</span><span class="sr-only">Close</span></button>
-      </div>
-       <div class="embed-responsive embed-responsive-16by9">
-     <iframe src="//www.youtube.com/embed/se_LY96NN5c" frameborder="0" allowfullscreen></iframe>
-     </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade bs-example-modal-lg-video5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content" style="text-align:center;">
-        <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" style="color:#fff;">&times;</span><span class="sr-only">Close</span></button>
-      </div>
-       <div class="embed-responsive embed-responsive-16by9">
-     <iframe src="//www.youtube.com/embed/iBcz0kNUtTM" frameborder="0" allowfullscreen></iframe>
-     </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade bs-example-modal-lg-video6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content" style="text-align:center;">
-        <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" style="color:#fff;">&times;</span><span class="sr-only">Close</span></button>
-      </div>
-       <div class="embed-responsive embed-responsive-16by9">
-    <iframe src="//www.youtube.com/embed/rB9mXIG8XYo" frameborder="0" allowfullscreen></iframe>
-    </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade bs-example-modal-lg-video7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content" style="text-align:center;">
-        <div class="modal-header">
-         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" style="color:#fff;">&times;</span><span class="sr-only">Close</span></button>
-      </div>
-      <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/xEmfUirYZnc"></iframe>
-      </div>
-    
-    </div>
-  </div>
-</div>
-
-</div><!-- finish container lead -->
-<script>
-	
-sliderInt = 1;
-sliderNext = 2;
-
-$(document).ready(function(){
-$("#slider > div#1").fadeIn(1000);
-startSlider();
-
-});
-function startSlider(){
-	count = $("#slider > div").size();
-
-    loop = setInterval(function(){
-
-if(sliderNext >count){
-	sliderNext =1;
-	sliderInt =1;
+function updateDebugState() {
+  document.body.classList.toggle('debug-on', debugInput.checked);
 }
+debugInput.addEventListener("click", updateDebugState);
+updateDebugState();
 
+//  =====================================================
+//                 Search input Function
+//  =====================================================
+(function() {
+  var morphSearch = document.getElementById('morphsearch'),
+    input = morphSearch.querySelector('input.morphsearch-input'),
+    ctrlClose = morphSearch.querySelector('span.morphsearch-close'),
+    isOpen = isAnimating = false,
+    // show/hide search area
+    toggleSearch = function(evt) {
+      // return if open and the input gets focused
+      if (evt.type.toLowerCase() === 'focus' && isOpen) return false;
 
- $("#slider > div").fadeOut(700);
- $("#slider > div#"+ sliderNext).fadeIn(700);
+      var offsets = morphsearch.getBoundingClientRect();
+      if (isOpen) {
+        classie.remove(morphSearch, 'open');
 
- sliderInt = sliderNext;
- sliderNext = sliderNext + 1;
+        // trick to hide input text once the search overlay closes 
+        // todo: hardcoded times, should be done after transition ends
+        if (input.value !== '') {
+          setTimeout(function() {
+            classie.add(morphSearch, 'hideInput');
+            setTimeout(function() {
+              classie.remove(morphSearch, 'hideInput');
+              input.value = '';
+            }, 300);
+          }, 500);
+        }
 
-	},9000)
-}
+        input.blur();
+      } else {
+        classie.add(morphSearch, 'open');
+      }
+      isOpen = !isOpen;
+    };
 
-function prev(){
- newSlide = sliderInt - 1;
- showSlide(newSlide);
-}
-
-
-function next(){
-newSlide = sliderInt + 1;
- showSlide(newSlide);
-}
-
-function stopLoop(){
-
- window.clearInterval(loop);
-
-}
-
-function showSlide(id){
-	stopLoop();
-if(id > count){
-	id = 1 ;
-}else if(id < 1){
-	id = count;
-}
-
-
- $("#slider > div").fadeOut(700);
- $("#slider > div#"+ id).fadeIn(700);
-
- sliderInt = id;
- sliderNext = id + 1;
- startSlider();
-}
-
-</script>
+  // events
+  input.addEventListener('focus', toggleSearch);
+  ctrlClose.addEventListener('click', toggleSearch);
+  // esc key closes search overlay
+  // keyboard navigation events
+  document.addEventListener('keydown', function(ev) {
+    var keyCode = ev.keyCode || ev.which;
+    if (keyCode === 27 && isOpen) {
+      toggleSearch(ev);
+    }
+  });
+  // Do Not allow to submit the form 
+  morphSearch.querySelector('button[type="submit"]').addEventListener('click', function(ev) {
+    ev.preventDefault();
+  });
+})();
+  </script>

@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
+<!-- ==================================
+  Joseph Chavez   WORK
+================================= -->
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1, user-scalable=no">
-    <title><%= content_for?(:title) ? yield(:title) : "Linda Boonyuen" %></title>
-    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Linda Bowens" %>">
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Saks</title>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <link href='http://fonts.googleapis.com/css?family=Poiret+One|Droid+Serif|Roboto+Slab:400,100' rel='stylesheet' type='text/css'>
- <!--  <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'> -->
+  </head>
     <%= csrf_meta_tags %>
   </head>
   <body>
-       <%= yield %>
-       <%= render "google_analytics" %>
-  </body>
+   <%= yield %>
+       
+    </body>
 </html>
